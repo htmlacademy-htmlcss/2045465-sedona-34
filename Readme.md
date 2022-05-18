@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Инна Дементьева](https://up.htmlacademy.ru/htmlcss/34/user/2045465).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
