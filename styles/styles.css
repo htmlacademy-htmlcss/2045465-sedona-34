@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+.page-header {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.navigation-link, .navigation-link-current {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+.button.navigation-link {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #756157;
+}
+.main-index {
+    color: #000000;
+    background-color: #FFFFFF;
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.main-index h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.advantages-list {
+    text-align: center;
+}
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+}
+/*  блок с преимущесьтвами{
+    color: #FFFFFF;
+} 
+*/
+.advantages-description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.interested .button{
+font-size: 20px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+color: #FFFFFF;
+background-color: #756157;
+text-decoration: none;
+text-transform: uppercase;
+}
+.subscribe {
+    background-image: url("../images/background-subscribe.jpg");
+    color: #FFFFFF;
+}
+.button-email{
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+.page-footer {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.footer-contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
