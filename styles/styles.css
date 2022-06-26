@@ -75,6 +75,7 @@ body {
 }
 .navigation-link,
 .navigation-link-current {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-size: 20px;
@@ -82,7 +83,6 @@ body {
   color: #000000;
   text-align: center;
   text-decoration: none;
-  margin: 0;
 }
 .button.navigation-link {
   margin-top: 14px;
@@ -95,6 +95,14 @@ body {
   padding: 9px 15px;
   margin: 14px 0;
 }
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
 .main-conteiner {
   flex-grow: 1;
   background-color: #ffffff;
@@ -103,13 +111,18 @@ body {
   margin: 0;
   padding: 0;
 }
+.vektor-welcome {
+  display: block;
+}
 .vektor {
   margin: 0 auto;
   padding: 51px 371px 82px;
   color: #000000;
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/divider.svg"),
+    url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 .main-conteiner h2 {
   font-size: 30px;
@@ -211,6 +224,20 @@ body {
 .white-description {
   color: #ffffff;
 }
+.advantages-block {
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: 50% 80px;
+}
+.block-housing {
+  background-image: url("../images/housing.svg");
+}
+.block-food {
+  background-image: url("../images/food.svg");
+}
+.block-souvenirs {
+  background-image: url("../images/souvenirs.svg");
+}
 /* Заинтересовались */
 .interested .button {
   font-size: 20px;
@@ -300,6 +327,16 @@ body {
   padding: 0;
   list-style-type: none;
 }
+.social-link {
+  position: relative;
+}
+.social-network {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .footer-social-item {
   width: 24px;
   height: 14px;
@@ -344,11 +381,21 @@ body {
   list-style-type: none;
 }
 .breadcrumbs-link {
+  position: relative;
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   text-decoration: none;
-  margin-left: 20px;
+  padding-left: 20px;
+}
+.home-breadcrumbs {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 .filter-form {
   display: flex;
@@ -486,6 +533,22 @@ body {
 }
 .button-email {
   background-color: #82b3d3;
+}
+.stars-amara,
+.stars-villas {
+  background: url("../images/star.svg") no-repeat 0 50%,
+    url("../images/star.svg") no-repeat 20% 50%,
+    url("../images/star.svg") no-repeat 40% 50%,
+    url("../images/star.svg") no-repeat 60% 50%;
+}
+.stars-desert {
+  background: url("../images/star.svg") no-repeat 0 50%,
+    url("../images/star.svg") no-repeat 20% 50%,
+    url("../images/star.svg") no-repeat 40% 50%;
+}
+.stars-green {
+  background: url("../images/star.svg") no-repeat 0 50%,
+    url("../images/star.svg") no-repeat 20% 50%;
 }
 .rating {
   font-size: 16px;
