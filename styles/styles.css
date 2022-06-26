@@ -379,8 +379,10 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background: url(../images/arrow.svg) no-repeat 24px center;
 }
 .breadcrumbs-link {
+  display: flex;
   position: relative;
   font-size: 16px;
   line-height: 21px;
@@ -389,13 +391,12 @@ body {
   padding-left: 20px;
 }
 .home-breadcrumbs {
-  display: inline-block;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
   left: 0;
   bottom: 0;
-  margin: auto;
+  /* margin: 0 auto; */
 }
 .filter-form {
   display: flex;
@@ -447,7 +448,10 @@ body {
 .select {
   display: flex;
   margin: 55px 71px 56px 72px;
-  padding: 0;
+}
+.sorting-type {
+  display: flex;
+  margin: 0 auto;
 }
 .catalog-title {
   font-size: 30px;
@@ -456,14 +460,15 @@ body {
   text-align: left;
   text-transform: uppercase;
   margin: 0;
+  align-self: center;
 }
-.select .button {
+.toggle-list {
+  display: flex;
   width: 48px;
   min-height: 48px;
   margin-right: 8px;
-  /* background-color: #ffffff; */
 }
-.select .button:nth-of-type(3n) {
+.toggle-list:nth-of-type(3n) {
   margin-right: 0;
 }
 .select-catalog,
