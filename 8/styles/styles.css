@@ -59,14 +59,8 @@ body {
 .page-header-logo {
   display: block;
   margin: 0 30px -5px 70px;
+  cursor: pointer;
 }
-
-/* .navigation, .navigation-user{
-  display: flex;
-  width: 1200px;
-  margin: 0 70px 0 0;
-} */
-
 .navigation-list {
   display: flex;
   align-items: center;
@@ -77,13 +71,10 @@ body {
   list-style-type: none;
 }
 .navigation-user {
-  /* display: flex;
-  justify-content: space-evenly; */
-  max-width: 290px;
+  max-width: 330px;
   padding: 0;
   margin-left: auto;
 }
-
 .navigation-link {
   display: block;
   padding: 20px 17px;
@@ -94,6 +85,53 @@ body {
   text-decoration: none;
   position: relative;
 }
+.navigation-user .navigation-link {
+  position: relative;
+  min-width: 18px;
+  min-height: 18px;
+  padding: 14px 20px;
+}
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* .likes::after {
+  content: "12";
+  font-size: 10px;
+  line-height: 13px;
+  text-align:center;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+  position: ;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 62px;
+  bottom: 30px;
+  padding: 4px;
+} */
+
+.likes {
+  position: absolute;
+  top: -4px;
+  left: 24px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+  padding: 4px;
+}
 .navigation-link-current::before {
   content: "";
   position: absolute;
@@ -103,32 +141,6 @@ body {
   height: 2px;
   background-color: #756257;
 }
-.navigation-user .navigation-link {
-  position: relative;
-  min-width: 18px;
-  min-height: 18px;
-}
-.likes {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 20px;
-  height: 20px;
-  font-size: 10px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #7db54f;
-  border-radius: 50%;
-}
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
 .button.navigation-link {
   font-size: 16px;
   line-height: 20px;
@@ -137,7 +149,7 @@ body {
   color: #ffffff;
   background-color: #756157;
   padding: 9px 15px;
-  margin: 14px 0;
+  margin: 14px 0 14px 20px;
   min-width: 160px;
   border-radius: 4px;
 }
@@ -560,14 +572,14 @@ body {
 }
 .toggle {
   border-radius: 4px;
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
 .toggle:hover,
 .toggle:active {
   color: #000000;
 }
 .toggle:focus {
-  color: #68A2CA;
+  color: #68a2ca;
 }
 .select-catalog,
 .hotels {
