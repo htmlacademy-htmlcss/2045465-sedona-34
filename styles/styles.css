@@ -353,6 +353,7 @@ body {
   border-bottom-left-radius: 10px;
   background-color: #f2f2f2;
   padding-left: 22px;
+  font: inherit;
 }
 .button-email {
   font-size: 20px;
@@ -497,17 +498,33 @@ body {
   bottom: 0;
   /* margin: 0 auto; */
 }
-.filter-form {
+/* .filter-form {
   display: flex;
-}
-/* .filter-group {
-  display: flex;
+
 } */
+
+.wrapper-form {
+  display: flex;
+  margin-top: 40px;
+}
+.wrapper {
+  display: flex;
+  margin-left: auto;
+}
+.filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  transform: translateY(24px);
+}
 .filter-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: left;
+}
+.infrastructure {
+  padding-right: 70px;
 }
 .caption {
   font-size: 18px;
@@ -515,6 +532,106 @@ body {
   font-weight: 400;
   text-align: left;
 }
+/* Ползунок */
+.filter-title {
+  margin-bottom: 34px;
+}
+.range-wrapper {
+  display: flex;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  position: relative;
+}
+.range {
+  position: relative;
+}
+.range::after {
+  content: "";
+  right: 120px;
+  bottom: 62px;
+  position: absolute;
+  width: 48px;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(90deg);
+}
+.filter-label {
+  display: flex;
+  position: relative;
+}
+.range-input {
+  width: 144px;
+  padding: 14px 17px;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  appearance: textfield;
+}
+.range-wrapper::before {
+  content: "до";
+  position: absolute;
+  color: #ffffff;
+  top: 15px;
+  right: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 30%;
+}
+.range-wrapper::after {
+  content: "от";
+  position: absolute;
+  color: #ffffff;
+  top: 15px;
+  left: 100px;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 30%;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  margin-top: 32px;
+}
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 1;
+  border: none;
+}
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+}
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+}
+.toggle-min {
+  top: -8px;
+  left: -3px;
+}
+.toggle-max {
+  top: -8px;
+  right: -5px;
+}
+
 .button-submit,
 .hotels-button {
   font-size: 16px;
@@ -525,6 +642,9 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .button-submit {
   padding: 14px 15px;
@@ -538,10 +658,13 @@ body {
   color: #ffffff;
   background-color: rgba(28, 28, 28, 0);
   border: none;
+  cursor: pointer;
 }
 .button-submit-reset {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  padding-left: 70px;
 }
 /* Каталог */
 .select {
