@@ -557,11 +557,14 @@ body {
 .option:active .caption-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.option-input[type="checkbox"]:checked + .caption-mark::before,
 .option-input[type="checkbox"]:checked + .caption-mark::after {
   position: absolute;
-  background-image: ;
-  content: "";
+  content: "a";
+  color: transparent;
+  top: 2px;
+  padding-left: 10px;
+  background: url("../images/check.svg") no-repeat;
+  appearance: none;
 }
 /* Ползунок */
 .filter-title {
