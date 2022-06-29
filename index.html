@@ -208,6 +208,65 @@
       </section>
     </footer>
   </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="position">
+            <p class="field-group auth-date">
+              <label class="field" for="auth-date">Дата заезда:</label>
+              <input class="auth-form-field" type="text" name="date" id="auth-date" placeholder="27 апреля 2020">
+            </p>
+            <span class="text-form red">Мы не можем отправить вас в прошлое.</span>
+            <p class="field-group auth-date">
+              <label class="field field-leaving" for="auth-date-leaving">Дата выезда:</label>
+              <input class="auth-form-field" type="text" name="date-leaving" id="auth-date-leaving"
+                placeholder="1 сентября 2021">
+            </p>
+            <span class="text-form">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="group-choice">
+            <p class="field-group">
+              <label class="field-adults" for="adults">Взрослые:</label>
+              <svg class="minus-adults" aria-hidden="true" focusable="false" fill="currentColor" width="13" height="1"
+                viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0v1h13V0H0Z" opacity=".3" />
+              </svg>
+              <input class="form-field " type="text" name="adults" id="adults" placeholder="2">
+              <svg class="plus-adults" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" opacity=".3" />
+              </svg>
+            </p>
+            <p class="field-group">
+              <label class="field-child" for="child">
+                Дети:
+                <button class="info">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+              </label>
+              <svg class="minus-child" aria-hidden="true" focusable="false" fill="currentColor" width="13" height="1"
+                viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0v1h13V0H0Z" opacity=".3" />
+              </svg>
+              <input class="form-field " type="text" name="child" id="child" placeholder="1">
+              <svg class="plus-child" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" opacity=".3"/>
+              </svg>
+            </p>
+          </div>
+          <button class="button modal-submit" type="submit">Найти</button>
+
+        </form>
+
+      </section>
+
+
+    </div>
+  </div>
 </body>
 
 </html>
