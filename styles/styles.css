@@ -532,6 +532,37 @@ body {
   font-weight: 400;
   text-align: left;
 }
+.option {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+.caption-mark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+.option:hover .caption-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* .option:focus .caption-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+} */
+.option:active .caption-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.option-input[type="checkbox"]:checked + .caption-mark::before,
+.option-input[type="checkbox"]:checked + .caption-mark::after {
+  position: absolute;
+  background-image: ;
+  content: "";
+}
 /* Ползунок */
 .filter-title {
   margin-bottom: 34px;
