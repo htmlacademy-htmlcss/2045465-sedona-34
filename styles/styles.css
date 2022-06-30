@@ -71,9 +71,10 @@ body {
   list-style-type: none;
 }
 .navigation-user {
-  max-width: 330px;
+  max-width: 290px;
   padding: 0;
   margin-left: auto;
+  margin-right: 45px;
 }
 .navigation-link {
   display: block;
@@ -86,10 +87,13 @@ body {
   position: relative;
 }
 .navigation-user .navigation-link {
+  display: block;
   position: relative;
   min-width: 18px;
   min-height: 18px;
   padding: 14px 20px;
+  margin: 0;
+  display: block;
 }
 .navigation-icon {
   position: absolute;
@@ -98,6 +102,12 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+}
+.navigation-user .navigation-item:last-child {
+  padding-right: 20px;
+}
+.navigation-item:hover {
+  outline: 2px solid #83B3D3;
 }
 
 /* .likes::after {
@@ -254,9 +264,6 @@ body {
   text-align: center;
   margin: 0;
 }
-.block-title {
-  padding-top: 182px;
-}
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
@@ -278,18 +285,18 @@ body {
   color: #ffffff;
 }
 .advantages-block {
+  margin: 0;
   background-repeat: no-repeat;
   background-size: 75px 72px;
   background-position: 50% 80px;
 }
-.block-housing {
-  background-image: url("../images/housing.svg");
+.block-title {
+  padding: 0;
+  margin: 0;
 }
-.block-food {
-  background-image: url("../images/food.svg");
-}
-.block-souvenirs {
-  background-image: url("../images/souvenirs.svg");
+.inner-block{
+  display: block;
+  margin: 80px auto 30px;
 }
 /* Заинтересовались */
 .interested .button {
@@ -349,8 +356,7 @@ body {
 }
 .email {
   border: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
   padding-left: 22px;
   font: inherit;
@@ -367,8 +373,7 @@ body {
   margin: 0;
   padding: 12px 15px;
   border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
 /* Футер */
@@ -459,6 +464,7 @@ body {
 /* Модальное окно */
 .modal-container {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
@@ -542,14 +548,13 @@ body {
 .auth-form-field:focus {
   background-color: #e6e6e6;
 }
-
+.auth-form-field:focus {
+  outline: 3px solid #83b3d3;
+}
 .auth-form-field:not(:placeholder-shown) {
   background-color: #ffffff;
   border: 2px solid #000000;
   outline: none;
-}
-.auth-form-field:focus {
-  outline: 3px solid #83b3d3;
 }
 .field {
   align-self: center;
@@ -650,6 +655,7 @@ body {
 }
 .field-adults {
   padding-right: 56px;
+  position: relative;
 }
 .field-child {
   padding-right: 22px;
@@ -672,6 +678,10 @@ body {
 .minus-adults:hover {
   color: #000000;
 }
+/* .plus-adults:focus,
+.minus-adults:focus{
+  outline: 3px solid #83b3d3;
+} */
 .plus-adults:active,
 .minus-adults:active {
   color: rgba(0, 0, 0, 0.3);
@@ -715,9 +725,9 @@ body {
 }
 /* Блокировка */
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 /* Фильтр */
 .filter {
@@ -853,6 +863,7 @@ body {
 }
 .range-wrapper {
   display: flex;
+  flex-wrap: wrap;
   border: 2px solid #ffffff;
   border-radius: 4px;
   position: relative;
@@ -860,25 +871,12 @@ body {
 .range {
   position: relative;
 }
-.range::after {
-  content: "";
-  right: 120px;
-  bottom: 58px;
-  position: absolute;
-  width: 48px;
-  border-bottom: 2px solid #ffffff;
-  transform: rotate(90deg);
-}
-.filter-label {
-  display: flex;
-  position: relative;
-}
 .range-input {
   width: 144px;
   padding: 14px 17px;
   font-size: 18px;
   line-height: 21px;
-  border: none;
+  border-left: 2px solid #ffffff;;
   background-color: transparent;
   color: #ffffff;
   appearance: textfield;
@@ -1056,7 +1054,7 @@ body {
   min-height: 48px;
   margin-right: 8px;
 }
-.toggle-list:nth-of-type(3n) {
+.toggle-list:last-child {
   margin-right: 0;
 }
 .toggle {
@@ -1092,16 +1090,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.pagination-list {
-  position: relative;
-}
-.pagination-list::after {
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid #e6e6e6;
-  width: 1055px;
-  bottom: 90px;
-}
+
 .hotels-item {
   padding: 20px;
 }
@@ -1182,26 +1171,18 @@ body {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
-.stars-amara,
-.stars-villas {
-  /* background: url("../images/star.svg");
+.stars {
+  background: url("../images/star.svg");
   align-self: center;
   width: 89px;
   height: 17px;
-  background-repeat: space; */
-  background: url("../images/star.svg") no-repeat 0 50%,
-    url("../images/star.svg") no-repeat 20% 50%,
-    url("../images/star.svg") no-repeat 40% 50%,
-    url("../images/star.svg") no-repeat 60% 50%;
+  background-repeat: space;
 }
 .stars-desert {
-  background: url("../images/star.svg") no-repeat 0 50%,
-    url("../images/star.svg") no-repeat 20% 50%,
-    url("../images/star.svg") no-repeat 40% 50%;
+  width: 66px;
 }
 .stars-green {
-  background: url("../images/star.svg") no-repeat 0 50%,
-    url("../images/star.svg") no-repeat 20% 50%;
+  width: 46px;
 }
 .rating {
   font-size: 16px;
@@ -1214,6 +1195,17 @@ body {
   border-radius: 4px;
 }
 /* Пагинация */
+
+.pagination-list {
+  position: relative;
+}
+.pagination-list::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #e6e6e6;
+  width: 1055px;
+  bottom: 90px;
+}
 .pagination {
   display: flex;
   margin: 96px 71px 25px 73px;
