@@ -107,7 +107,7 @@ body {
   padding-right: 20px;
 }
 .navigation-item:hover {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
 }
 
 /* .likes::after {
@@ -294,7 +294,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.inner-block{
+.inner-block {
   display: block;
   margin: 80px auto 30px;
 }
@@ -818,7 +818,7 @@ body {
 .option-infrastructure:hover .caption-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.option:focus .caption-mark {
+.option-input:focus + .caption-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83b3d3;
 }
@@ -849,6 +849,10 @@ body {
   border-radius: 50%;
   content: "";
 }
+.housing-input:focus + .caption-mark {
+  background-color: #ffffff;
+  outline: 3px solid #83b3d3;
+}
 .filter-list {
   margin: 0;
   padding: 0;
@@ -864,9 +868,23 @@ body {
 .range-wrapper {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid #ffffff;
   border-radius: 4px;
   position: relative;
+}
+.range-wrapper:hover,
+.range-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.range-input:focus {
+  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+.input-max:focus {
+  border-radius: 0 4px 4px 0;
+}
+.range-input:active {
+  background-color: #756257;
 }
 .range {
   position: relative;
@@ -876,10 +894,18 @@ body {
   padding: 14px 17px;
   font-size: 18px;
   line-height: 21px;
-  border-left: 2px solid #ffffff;;
+  border: 2px solid #ffffff;
+  border-right: none;
   background-color: transparent;
   color: #ffffff;
   appearance: textfield;
+}
+.input-min {
+  border-radius: 4px 0 0 4px;
+}
+.input-max {
+  border: 2px solid #ffffff;
+  border-radius: 0 4px 4px 0;
 }
 .range-wrapper::before {
   content: "до";
