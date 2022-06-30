@@ -234,27 +234,49 @@
               <label class="field-adults" for="adults">Взрослые:</label>
               <svg class="minus-adults" aria-hidden="true" focusable="false" fill="currentColor" width="13" height="1"
                 viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0v1h13V0H0Z" opacity=".3" />
+                <path d="M0 0v1h13V0H0Z" />
               </svg>
               <input class="form-field " type="text" name="adults" id="adults" placeholder="2">
               <svg class="plus-adults" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" opacity=".3" />
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
               </svg>
             </p>
             <p class="field-group">
-              <label class="field-child" for="child">
-                Дети:
-                <button class="info">
+
+              <span class="field-child">
+                <label class="field-child" for="child">
+                  Дети:
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
-              </label>
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)">
+                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path d="M0 0h1v9H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" и id="tooltip-label">Укажите количество детей, которые
+                    будут
+                    с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
               <svg class="minus-child" aria-hidden="true" focusable="false" fill="currentColor" width="13" height="1"
                 viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0v1h13V0H0Z" opacity=".3" />
+                <path d="M0 0v1h13V0H0Z" />
               </svg>
               <input class="form-field " type="text" name="child" id="child" placeholder="1">
-              <svg class="plus-child" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" opacity=".3"/>
+              <svg class="plus-child" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
               </svg>
             </p>
           </div>
