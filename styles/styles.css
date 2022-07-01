@@ -92,7 +92,7 @@ body {
   min-width: 18px;
   min-height: 18px;
   padding: 14px 20px;
-  margin: 0;
+  margin: 18px 0 18px 0;
   display: block;
 }
 .navigation-icon {
@@ -109,25 +109,9 @@ body {
 .navigation-item:hover {
   outline: 2px solid #83b3d3;
 }
-
-/* .likes::after {
-  content: "12";
-  font-size: 10px;
-  line-height: 13px;
-  text-align:center;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #7db54f;
-  border-radius: 10px;
-  position: ;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: 62px;
-  bottom: 30px;
-  padding: 4px;
-} */
-
+.navigation-item:focus-within{
+  outline: 2px solid #83b3d3;
+}
 .likes {
   position: absolute;
   top: -4px;
