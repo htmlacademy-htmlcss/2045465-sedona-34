@@ -750,15 +750,10 @@ body {
   line-height: 21px;
   text-align: left;
   text-decoration: none;
-  padding-left: 20px;
 }
 .home-breadcrumbs {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  /* margin: 0 auto; */
+  display: block;
+  margin: 5px 25px 5px 0;
 }
 .wrapper-form {
   display: flex;
@@ -874,6 +869,8 @@ body {
 }
 .range-input:active {
   background-color: #756257;
+  box-shadow: none;
+  border: none;
 }
 .range {
   position: relative;
