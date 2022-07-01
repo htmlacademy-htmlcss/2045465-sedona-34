@@ -549,9 +549,6 @@ body {
   align-self: center;
   padding-right: 42px;
 }
-.field-leaving {
-  padding-right: 36px;
-}
 .position {
   position: relative;
 }
@@ -651,41 +648,56 @@ body {
   padding-left: 30px;
   position: relative;
 }
-.minus-adults {
+.button.button-minus {
   position: absolute;
   z-index: 1;
-  transform: translate(15px, 24px);
+  transform: translate(15px, 13px);
+  background-color: transparent;
+  border: none;
+}
+.button.button-plus {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-35px, 13px);
+  background-color: transparent;
+  border: none;
+  padding: 9px;
+}
+.minus-adults,
+.minus-child {
+  position: absolute;
+  z-index: 2;
+  left: 2px;
+  top: 8px;
   color: rgba(0, 0, 0, 0.3);
 }
-.plus-adults {
+.plus-adults,
+.plus-child  {
   position: absolute;
-  z-index: 1;
-  transform: translate(-30px, 18px);
+  z-index: 2;
+  top: 2px;
+  right: 3px;
   color: rgba(0, 0, 0, 0.3);
+}
+.button.button-plus:hover,
+.button.button-minus:hover{
+  background-color: transparent;
 }
 .plus-adults:hover,
 .minus-adults:hover {
   color: #000000;
+  background-color: transparent;
 }
-/* .plus-adults:focus,
-.minus-adults:focus{
-  outline: 3px solid #83b3d3;
-} */
+.button.button-plus:focus,
+.button.button-minus:focus {
+  border: 3px solid #83b3d3;
+  background-color: transparent;
+  outline: none;
+}
 .plus-adults:active,
 .minus-adults:active {
   color: rgba(0, 0, 0, 0.3);
-}
-.minus-child {
-  position: absolute;
-  z-index: 1;
-  transform: translate(15px, 24px);
-  color: rgba(0, 0, 0, 0.3);
-}
-.plus-child {
-  position: absolute;
-  z-index: 1;
-  transform: translate(-30px, 18px);
-  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
 .plus-child:hover,
 .minus-child:hover {
