@@ -344,6 +344,7 @@ body {
   background-color: #f2f2f2;
   padding-left: 22px;
   font: inherit;
+  margin: 0;
 }
 .button-email {
   font-size: 20px;
@@ -368,7 +369,8 @@ body {
 .page-footer-conteiner {
   display: flex;
   min-width: 1060px;
-  margin: 0 auto;
+  margin: 0 70px;
+  justify-content: space-between;
   padding: 32px 0;
 }
 .footer-social {
@@ -385,6 +387,9 @@ body {
 }
 .social-link {
   position: relative;
+}
+.footer-social-item:focus-within {
+  outline: 2px solid #83b3d3;
 }
 .social-network {
   position: absolute;
@@ -411,6 +416,7 @@ body {
   margin: 16px;
 }
 .footer-contacts-phone {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -418,7 +424,6 @@ body {
   text-decoration: none;
   display: block;
   margin: auto 0;
-  min-width: 720px;
 }
 .footer-contacts-phone:hover {
   color: #756157;
