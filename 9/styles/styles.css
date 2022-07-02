@@ -46,6 +46,7 @@ body {
 .conteiner {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   /* display: flex;
   flex-direction: column;
   flex-grow: 1; */
@@ -60,6 +61,9 @@ body {
   display: block;
   margin: 0 30px -5px 70px;
   cursor: pointer;
+}
+.header-logo:focus {
+  outline: none;
 }
 .navigation-list {
   display: flex;
@@ -92,8 +96,11 @@ body {
   min-width: 18px;
   min-height: 18px;
   padding: 14px 20px;
-  margin: 0;
+  margin: 18px 0 18px 0;
   display: block;
+}
+.navigation-link:focus {
+  outline: none;
 }
 .navigation-icon {
   position: absolute;
@@ -109,25 +116,9 @@ body {
 .navigation-item:hover {
   outline: 2px solid #83b3d3;
 }
-
-/* .likes::after {
-  content: "12";
-  font-size: 10px;
-  line-height: 13px;
-  text-align:center;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #7db54f;
-  border-radius: 10px;
-  position: ;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: 62px;
-  bottom: 30px;
-  padding: 4px;
-} */
-
+.navigation-item:focus-within {
+  outline: 2px solid #83b3d3;
+}
 .likes {
   position: absolute;
   top: -4px;
@@ -360,6 +351,7 @@ body {
   background-color: #f2f2f2;
   padding-left: 22px;
   font: inherit;
+  margin: 0;
 }
 .button-email {
   font-size: 20px;
@@ -384,12 +376,12 @@ body {
 .page-footer-conteiner {
   display: flex;
   min-width: 1060px;
-  margin: 0 auto;
+  margin: 0 70px;
+  justify-content: space-between;
   padding: 32px 0;
 }
 .footer-social {
   min-width: 142px;
-  margin-left: 70px;
 }
 .footer-social-list {
   display: flex;
@@ -399,23 +391,10 @@ body {
   padding: 0;
   list-style-type: none;
 }
-.social-link {
-  position: relative;
-}
-.social-network {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 .social-network {
   color: #83b3d3;
 }
 .social-network:hover {
-  color: #68a2ca;
-}
-.social-network:focus {
   color: #68a2ca;
 }
 .social-network:active {
@@ -427,6 +406,7 @@ body {
   margin: 16px;
 }
 .footer-contacts-phone {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -434,7 +414,6 @@ body {
   text-decoration: none;
   display: block;
   margin: auto 0;
-  min-width: 720px;
 }
 .footer-contacts-phone:hover {
   color: #756157;
@@ -560,9 +539,6 @@ body {
   align-self: center;
   padding-right: 42px;
 }
-.field-leaving {
-  padding-right: 36px;
-}
 .position {
   position: relative;
 }
@@ -662,41 +638,56 @@ body {
   padding-left: 30px;
   position: relative;
 }
-.minus-adults {
+.button.button-minus {
   position: absolute;
   z-index: 1;
-  transform: translate(15px, 24px);
+  transform: translate(15px, 13px);
+  background-color: transparent;
+  border: none;
+}
+.button.button-plus {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-35px, 13px);
+  background-color: transparent;
+  border: none;
+  padding: 9px;
+}
+.minus-adults,
+.minus-child {
+  position: absolute;
+  z-index: 2;
+  left: 2px;
+  top: 8px;
   color: rgba(0, 0, 0, 0.3);
 }
-.plus-adults {
+.plus-adults,
+.plus-child {
   position: absolute;
-  z-index: 1;
-  transform: translate(-30px, 18px);
+  z-index: 2;
+  top: 2px;
+  right: 3px;
   color: rgba(0, 0, 0, 0.3);
+}
+.button.button-plus:hover,
+.button.button-minus:hover {
+  background-color: transparent;
 }
 .plus-adults:hover,
 .minus-adults:hover {
   color: #000000;
+  background-color: transparent;
 }
-/* .plus-adults:focus,
-.minus-adults:focus{
-  outline: 3px solid #83b3d3;
-} */
+.button.button-plus:focus,
+.button.button-minus:focus {
+  border: 3px solid #83b3d3;
+  background-color: transparent;
+  outline: none;
+}
 .plus-adults:active,
 .minus-adults:active {
   color: rgba(0, 0, 0, 0.3);
-}
-.minus-child {
-  position: absolute;
-  z-index: 1;
-  transform: translate(15px, 24px);
-  color: rgba(0, 0, 0, 0.3);
-}
-.plus-child {
-  position: absolute;
-  z-index: 1;
-  transform: translate(-30px, 18px);
-  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
 .plus-child:hover,
 .minus-child:hover {
@@ -761,15 +752,10 @@ body {
   line-height: 21px;
   text-align: left;
   text-decoration: none;
-  padding-left: 20px;
 }
 .home-breadcrumbs {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  /* margin: 0 auto; */
+  display: block;
+  margin: 5px 25px 5px 0;
 }
 .wrapper-form {
   display: flex;
@@ -885,6 +871,8 @@ body {
 }
 .range-input:active {
   background-color: #756257;
+  box-shadow: none;
+  border: none;
 }
 .range {
   position: relative;
@@ -1002,6 +990,7 @@ body {
 .button-submit:hover,
 .button-submit:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 .button-submit:active {
   background-color: #82b3d3;
@@ -1027,6 +1016,7 @@ body {
 }
 .button-reset:focus {
   border: 3px solid #83b3d3;
+  outline: none;
 }
 .button-reset:active {
   opacity: 0.3;
@@ -1077,7 +1067,7 @@ body {
 .toggle-list {
   display: flex;
   width: 48px;
-  min-height: 48px;
+  height: 48px;
   margin-right: 8px;
 }
 .toggle-list:last-child {
@@ -1086,13 +1076,16 @@ body {
 .toggle {
   border-radius: 4px;
   color: #e5e5e5;
+  padding: 0;
+  margin: 0;
 }
 .toggle:hover,
 .toggle:active {
   color: #000000;
 }
-.toggle:focus {
-  color: #68a2ca;
+.toggle-list:focus-within {
+  outline: 3px solid #68a2ca;
+  border-radius: 4px;
 }
 .select-catalog,
 .hotels {
