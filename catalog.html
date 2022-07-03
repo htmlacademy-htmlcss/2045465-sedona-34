@@ -64,12 +64,8 @@
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <svg class="home-breadcrumbs" aria-hidden="true" focusable="false" width="13" height="13"
-                viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="m0 6.15 6-5.5 6 5.5v6.2H0v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8H4v-3.5h4v3.5H7v-2.5H5v2.5Z"
-                  fill="#fff" />
-              </svg>
+              <img class="home-breadcrumbs" width="12" height="12" src="images/breadcrubs-union.svg"
+                alt="Главная страница.">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -78,66 +74,91 @@
           </li>
         </ol>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter-group">
-            <legend class="filter-title">Инфраструктура:</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <label class="option">
-                  <input class="option-input" type="checkbox" name="swimming-pool" checked>
-                  <span class="caption">Бассейн</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="option">
-                  <input class="option-input" type="checkbox" name="parking" checked>
-                  <span class="caption">Парковка</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="option">
-                  <input class="option-input" type="checkbox" name="Wi-Fi">
-                  <span class="caption">Wi-Fi</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-group">
-            <legend class="filter-title">Тип жилья:</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <label class="option">
-                  <input class="option-input" type="radio" name="housing" value="hotels" checked>
-                  <span class="caption">Гостиница</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="option">
-                  <input class="option-input" type="radio" name="housing" value="motel">
-                  <span class="caption">Мотель</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="option">
-                  <input class="option-input" type="radio" name="housing" value="apartments">
-                  <span class="caption">Апартаменты</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <!-- Ползунок <label for="prices">Стоимость, ₽:</label>
-          <table border="1">
-            <tr>
-              <td>0     от</td>
-              <td>9000  до</td>
-            </tr>
-          </table>
-          <input type="range" id="prices" name="price" step="1">-->
-
-
-          <div class="button-submit-reset">
-            <button class="button-submit" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+          <div class="wrapper-form">
+            <fieldset class="filter-group infrastructure">
+              <legend class="filter-title">Инфраструктура:</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <label class="option option-infrastructure">
+                    <input class="visually-hidden option-input" type="checkbox" name="swimming-pool" checked>
+                    <span class="caption-mark"></span>
+                    <span class="caption">Бассейн</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="option option-infrastructure">
+                    <input class="visually-hidden option-input" type="checkbox" name="parking" checked>
+                    <span class="caption-mark"></span>
+                    <span class="caption">Парковка</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="option option-infrastructure">
+                    <input class="visually-hidden option-input" type="checkbox" name="Wi-Fi">
+                    <span class="caption-mark"></span>
+                    <span class="caption">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend class="filter-title">Тип жилья:</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <label class="option">
+                    <input class="visually-hidden option-input housing-input" type="radio" name="housing" value="hotels"
+                      checked>
+                    <span class="caption-mark"></span>
+                    <span class="caption">Гостиница</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="option">
+                    <input class="visually-hidden option-input housing-input" type="radio" name="housing" value="motel">
+                    <span class="caption-mark"></span>
+                    <span class="caption">Мотель</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="option">
+                    <input class="visually-hidden option-input housing-input" type="radio" name="housing"
+                      value="apartments">
+                    <span class="caption-mark"></span>
+                    <span class="caption">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- Ползунок -->
+            <div class="wrapper">
+              <fieldset class="filter-group">
+                <legend class="filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper">
+                    <label class="filter-label">
+                      <input class="range-input input-min" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="filter-label">
+                      <input class="range-input input-max" type="number" value="9000" name="max-price">
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="right: 61px; width: 228px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="button-submit-reset">
+                <button class="button-submit" type="submit">Применить</button>
+                <button class="button-reset" type="reset">Сбросить</button>
+              </div>
+            </div>
           </div>
         </form>
       </section>
@@ -147,7 +168,7 @@
           <h2 class="catalog-title">
             Найдено гостиниц: 38
           </h2>
-          <div class="sorting-type">
+          <div class="select-type sorting-type">
             <select class="select-catalog" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
@@ -197,7 +218,7 @@
               <span class="hotels-price">От 4000 ₽</span>
               <a class="button hotels-button" href="#">Подробнее</a>
               <a class="button button-favorites button-transform" href="#">В избранное</a>
-              <div class="stars-amara">
+              <div class="stars stars-amara">
                 <span class="visually-hidden">4 звезды</span>
               </div>
               <div class="rating">Рейтинг: 8,5</div>
@@ -214,7 +235,7 @@
               <span class="hotels-price">От 5000 ₽</span>
               <a class="button hotels-button" href="#">Подробнее</a>
               <a class="button button-selected" href="#">В избранном</a>
-              <div class="stars-villas">
+              <div class="stars stars-villas">
                 <span class="visually-hidden">4 звезды</span>
               </div>
               <div class="rating">Рейтинг: 9,2</div>
@@ -231,7 +252,7 @@
               <span class="hotels-price">От 2500 ₽</span>
               <a class="button hotels-button" href="#">Подробнее</a>
               <a class="button button-favorites button-transform" href="#">В избранное</a>
-              <div class="stars-desert">
+              <div class="stars stars-three">
                 <span class="visually-hidden">3 звезды</span>
               </div>
               <div class="rating">Рейтинг: 6,9</div>
@@ -248,7 +269,7 @@
               <span class="hotels-price">От 1500 ₽</span>
               <a class="button hotels-button" href="#">Подробнее</a>
               <a class="button button-favorites button-transform" href="#">В избранное</a>
-              <div class="stars-green">
+              <div class="stars stars-two">
                 <span class="visually-hidden">2 звезды</span>
               </div>
               <div class="rating">Рейтинг: 5,0</div>
