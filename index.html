@@ -155,7 +155,7 @@
         <p class="useful">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribed">Ваш e-mail</label>
-          <input class="email" type="email" name="email" id="subscribed" placeholder="Ваш e-mail">
+          <input class="email error" type="email" name="email" id="subscribed" placeholder="Ваш e-mail">
           <button class="button-email button-transform" type="submit">Подписаться</button>
         </form>
       </section>
@@ -223,13 +223,13 @@
           <div class="position">
             <p class="field-group auth-date">
               <label class="field" for="auth-date">Дата заезда:</label>
-              <input class="auth-form-field" type="text" name="date-leaving" id="auth-date"
+              <input class="auth-form-field error" type="text" name="date-leaving" id="auth-date"
                 placeholder="27 апреля 2020">
             </p>
             <span class="text-form red">Мы не можем отправить вас в прошлое.</span>
             <p class="field-group auth-date">
               <label class="field" for="auth-date-leaving">Дата выезда:</label>
-              <input class="auth-form-field" type="text" name="date" id="auth-date-leaving"
+              <input class="auth-form-field error" type="text" name="date" id="auth-date-leaving"
                 placeholder="1 сентября 2021">
             </p>
             <span class="text-form">На эти даты есть свободные номера. Пока есть.</span>
@@ -240,7 +240,7 @@
               <label class="field-adults" for="adults">Взрослые:</label>
               <button class="button button-minus" type="button">
               </button>
-              <input class="form-field " type="text" name="adults" id="adults" placeholder="2">
+              <input class="form-field" type="text" name="adults" id="adults" placeholder="2">
               <button class="button button-plus" type="button">
               </button>
             </div>
@@ -274,16 +274,14 @@
               </span>
               <button class="button button-minus" type="button">
               </button>
-              <input class="form-field " type="text" name="child" id="child" placeholder="1">
+              <input class="form-field" type="text" name="child" id="child" placeholder="1">
               <button class="button button-plus" type="button">
               </button>
             </div>
             </p>
           </div>
           <button class="button modal-submit" type="submit">Найти</button>
-
         </form>
-
       </section>
 
 
