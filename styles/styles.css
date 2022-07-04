@@ -53,9 +53,6 @@ body {
   width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  /* display: flex;
-  flex-direction: column;
-  flex-grow: 1; */
 }
 
 .page-header {
@@ -373,7 +370,7 @@ body {
 
 .subscribe-title {
   text-transform: uppercase;
-  margin: 0 398px;
+  margin: 0;
 }
 
 .useful {
@@ -528,7 +525,6 @@ body {
 .modal-auth {
   width: 715px;
   min-height: 561px;
-  /* margin-top: 396px; */
 }
 
 .modal-close-button {
@@ -1078,7 +1074,7 @@ body {
 .range-input:active {
   background-color: #756257;
   box-shadow: none;
-  border: none;
+  outline: none;
 }
 
 .range-input:disabled {
@@ -1101,6 +1097,12 @@ body {
 
 .input-max:focus {
   border-radius: 0 4px 4px 0;
+}
+
+.input-max:active {
+  background-color: #756257;
+  box-shadow: none;
+  outline: none;
 }
 
 .range-wrapper::before {

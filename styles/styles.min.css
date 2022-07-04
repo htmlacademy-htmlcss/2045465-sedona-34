@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -53,9 +54,6 @@ body {
   width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  /* display: flex;
-  flex-direction: column;
-  flex-grow: 1; */
 }
 
 .page-header {
@@ -373,7 +371,7 @@ body {
 
 .subscribe-title {
   text-transform: uppercase;
-  margin: 0 398px;
+  margin: 0;
 }
 
 .useful {
@@ -381,11 +379,7 @@ body {
 }
 
 .subscribe-form {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(-webkit-min-content, 600px) minmax(-webkit-min-content, 200px);
-  -ms-grid-columns: minmax(min-content, 600px) minmax(min-content, 200px);
-  grid-template-columns: minmax(-webkit-min-content, 600px) minmax(-webkit-min-content, 200px);
   grid-template-columns: minmax(min-content, 600px) minmax(min-content, 200px);
   justify-content: center;
 }
@@ -492,8 +486,7 @@ body {
 
 .footer-logo {
   width: 115px;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .logo-html {
@@ -533,7 +526,6 @@ body {
 .modal-auth {
   width: 715px;
   min-height: 561px;
-  /* margin-top: 396px; */
 }
 
 .modal-close-button {
@@ -614,16 +606,6 @@ body {
 
 .auth-form-field:focus {
   outline: 3px solid #83b3d3;
-}
-
-.auth-form-field:not(:-moz-placeholder-shown) {
-  background-color: #ffffff;
-  box-shadow: 0 0 1px 2px #000000;
-}
-
-.auth-form-field:not(:-ms-input-placeholder) {
-  background-color: #ffffff;
-  box-shadow: 0 0 1px 2px #000000;
 }
 
 .auth-form-field:not(:placeholder-shown) {
@@ -766,8 +748,7 @@ body {
 }
 
 .adults::before {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .adults:hover::before,
@@ -821,8 +802,7 @@ body {
 }
 
 .child::before {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .child:hover::before,
@@ -853,8 +833,7 @@ body {
 .button.button-minus {
   position: absolute;
   z-index: 1;
-  -webkit-transform: translate(15px, 15px);
-          transform: translate(15px, 15px);
+  transform: translate(15px, 15px);
   background-color: transparent;
   border: none;
   padding: 9px;
@@ -863,8 +842,7 @@ body {
 .button.button-plus {
   position: absolute;
   z-index: 1;
-  -webkit-transform: translate(-35px, 15px);
-          transform: translate(-35px, 15px);
+  transform: translate(-35px, 15px);
   background-color: transparent;
   border: none;
   padding: 9px;
@@ -1030,9 +1008,7 @@ body {
   padding-left: 10px;
   background: url("../images/check-input.svg") no-repeat;
   background-size: 15px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .option-input[type="radio"] + .caption-mark {
@@ -1087,9 +1063,7 @@ body {
   border-right: none;
   background-color: transparent;
   color: #ffffff;
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .range-input:focus {
@@ -1101,7 +1075,7 @@ body {
 .range-input:active {
   background-color: #756257;
   box-shadow: none;
-  border: none;
+  outline: none;
 }
 
 .range-input:disabled {
@@ -1124,6 +1098,12 @@ body {
 
 .input-max:focus {
   border-radius: 0 4px 4px 0;
+}
+
+.input-max:active {
+  background-color: #756257;
+  box-shadow: none;
+  outline: none;
 }
 
 .range-wrapper::before {
@@ -1150,8 +1130,7 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1258,8 +1237,7 @@ body {
   cursor: pointer;
   border-radius: 4px;
   width: 100px;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-top: 20px;
 }
 
@@ -1290,8 +1268,7 @@ body {
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-right: 190px;
 }
 
@@ -1310,9 +1287,7 @@ body {
   padding: 14px 20px;
   font: inherit;
   background: url("../images/arrow-down.svg") no-repeat right 20px center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 
@@ -1367,13 +1342,9 @@ body {
 }
 
 .hotels-list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 340px 18px 340px 18px 340px;
   grid-template-columns: repeat(3, 340px);
-  -webkit-column-gap: 18px;
-     -moz-column-gap: 18px;
-          column-gap: 18px;
+  column-gap: 18px;
   justify-content: center;
   list-style-type: none;
   margin: 0;
@@ -1385,9 +1356,7 @@ body {
 }
 
 .hotel-conteiner {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 140px 20px 140px;
   grid-template-columns: 140px 140px;
   gap: 18px 20px;
 }
@@ -1413,8 +1382,7 @@ body {
 
 .hotels-image {
   display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .button {
@@ -1491,8 +1459,7 @@ body {
 
 .stars {
   background: url("../images/star.svg");
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   width: 89px;
   height: 17px;
   background-repeat: space;
@@ -1568,8 +1535,7 @@ body {
 
 .hotels-quantity {
   margin-left: auto;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1584,7 +1550,5 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background: url("../images/arrow-down.svg") no-repeat right 20px center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
