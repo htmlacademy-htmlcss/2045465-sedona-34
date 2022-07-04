@@ -381,7 +381,11 @@ body {
 }
 
 .subscribe-form {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: minmax(-webkit-min-content, 600px) minmax(-webkit-min-content, 200px);
+  -ms-grid-columns: minmax(min-content, 600px) minmax(min-content, 200px);
+  grid-template-columns: minmax(-webkit-min-content, 600px) minmax(-webkit-min-content, 200px);
   grid-template-columns: minmax(min-content, 600px) minmax(min-content, 200px);
   justify-content: center;
 }
@@ -488,7 +492,8 @@ body {
 
 .footer-logo {
   width: 115px;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .logo-html {
@@ -609,6 +614,16 @@ body {
 
 .auth-form-field:focus {
   outline: 3px solid #83b3d3;
+}
+
+.auth-form-field:not(:-moz-placeholder-shown) {
+  background-color: #ffffff;
+  box-shadow: 0 0 1px 2px #000000;
+}
+
+.auth-form-field:not(:-ms-input-placeholder) {
+  background-color: #ffffff;
+  box-shadow: 0 0 1px 2px #000000;
 }
 
 .auth-form-field:not(:placeholder-shown) {
@@ -751,7 +766,8 @@ body {
 }
 
 .adults::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .adults:hover::before,
@@ -805,7 +821,8 @@ body {
 }
 
 .child::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .child:hover::before,
@@ -836,7 +853,8 @@ body {
 .button.button-minus {
   position: absolute;
   z-index: 1;
-  transform: translate(15px, 15px);
+  -webkit-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
   background-color: transparent;
   border: none;
   padding: 9px;
@@ -845,7 +863,8 @@ body {
 .button.button-plus {
   position: absolute;
   z-index: 1;
-  transform: translate(-35px, 15px);
+  -webkit-transform: translate(-35px, 15px);
+          transform: translate(-35px, 15px);
   background-color: transparent;
   border: none;
   padding: 9px;
@@ -1011,7 +1030,9 @@ body {
   padding-left: 10px;
   background: url("../images/check-input.svg") no-repeat;
   background-size: 15px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .option-input[type="radio"] + .caption-mark {
@@ -1066,7 +1087,9 @@ body {
   border-right: none;
   background-color: transparent;
   color: #ffffff;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input:focus {
@@ -1127,7 +1150,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1234,7 +1258,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   width: 100px;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   margin-top: 20px;
 }
 
@@ -1265,7 +1290,8 @@ body {
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   margin-right: 190px;
 }
 
@@ -1284,7 +1310,9 @@ body {
   padding: 14px 20px;
   font: inherit;
   background: url("../images/arrow-down.svg") no-repeat right 20px center;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -1339,9 +1367,13 @@ body {
 }
 
 .hotels-list {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 340px 18px 340px 18px 340px;
   grid-template-columns: repeat(3, 340px);
-  column-gap: 18px;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
   justify-content: center;
   list-style-type: none;
   margin: 0;
@@ -1353,7 +1385,9 @@ body {
 }
 
 .hotel-conteiner {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 140px 20px 140px;
   grid-template-columns: 140px 140px;
   gap: 18px 20px;
 }
@@ -1379,7 +1413,8 @@ body {
 
 .hotels-image {
   display: block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .button {
@@ -1456,7 +1491,8 @@ body {
 
 .stars {
   background: url("../images/star.svg");
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   width: 89px;
   height: 17px;
   background-repeat: space;
@@ -1532,7 +1568,8 @@ body {
 
 .hotels-quantity {
   margin-left: auto;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1547,5 +1584,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background: url("../images/arrow-down.svg") no-repeat right 20px center;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
