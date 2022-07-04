@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <div class="conteiner">
+  <div class="container">
     <!--Шапка-->
     <header class="page-header">
       <a class="header-logo">
@@ -59,7 +61,7 @@
       </nav>
     </header>
 
-    <main class="main-conteiner main-index">
+    <main class="main-container">
       <div class="vektor">
         <h1 class="visually-hidden main-header">Седона: город-курорт</h1>
         <img class="vektor-welcome" src="images/welcome.svg" width="458" height="352"
@@ -70,9 +72,8 @@
           заслуживающий большего!</h2>
         <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
-
       <!-- Преимущества-->
-      <section class="advantages">
+      <section>
         <h2 class="visually-hidden advantages-header">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item town">
@@ -83,7 +84,7 @@
                 жизнь
               </p>
             </div>
-            <div class="image-town">
+            <div>
               <img class="advantages-image" src="images/photo-motel.jpg" width="800" height="384"
                 alt="Туристический комплекс.">
             </div>
@@ -101,26 +102,26 @@
               <img class="inner-block" src="images/food.svg" width="75" height="72" alt="Еда.">
               <h3 class="advantages-title block-title">Еда</h3>
               <p class="advantages-description-block">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!</p>
+                топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-block">
               <img class="inner-block" src="images/souvenirs.svg" width="75" height="72" alt="Сувениры.">
               <h3 class="advantages-title block-title">Сувениры</h3>
-              <p class="advantages-description-block">Не только китайского,
+              <p class="advantages-description-block">Не только китайского,<br>
                 но и настоящего местного производства!</p>
             </div>
           </li>
           <li class="advantages-item bridge">
             <div class="advantages-block">
-              <h3 class="advantages-title white-title">Там есть мост дьявола</h3>
+              <h3 class="advantages-title white-title">Там есть<br> мост дьявола</h3>
               <span class="advantages-description white-description">— №2 —</span>
               <p class="advantages-description white-description">Да, по нему можно пройти! Если вы осмелитесь,
                 разумеется
               </p>
             </div>
-            <div class="image-mountain">
+            <div>
               <img class="advantages-image" src="images/photo-mountain.jpg" width="800" height="384"
                 alt="Красная гора утеса около города Седона.">
             </div>
@@ -145,8 +146,8 @@
       <!--Заинтересовались-->
       <section class="interested">
         <h2 class="interested-title">Заинтересовались?</h2>
-        <p class="interested-information">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
-          гостиниц в Седоне</p>
+        <p class="interested-information">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+          гостиниц в Седоне&nbsp;&nbsp;</p>
         <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <!--Рассылка-->
@@ -155,19 +156,19 @@
         <p class="useful">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribed">Ваш e-mail</label>
-          <input class="email" type="email" name="email" id="subscribed" placeholder="Ваш e-mail">
+          <input class="email error" type="email" name="email" id="subscribed" placeholder="Ваш e-mail">
           <button class="button-email button-transform" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <!--Футер-->
     <footer class="page-footer">
-      <section class="page-footer-conteiner">
+      <section class="page-footer-container">
         <div class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="social-link" href="https://vk.com/htmlacademy">
+              <a href="https://vk.com/htmlacademy">
                 <svg class="social-network" aria-hidden="true" focusable="false" width="25" height="14"
                   viewBox="0 0 25 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -177,7 +178,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">
+              <a href="https://t.me/htmlacademy">
                 <svg class="social-network" aria-hidden="true" focusable="false" width="18" height="16"
                   viewBox="0 0 18 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -187,7 +188,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <a href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="social-network" aria-hidden="true" focusable="false" width="23" height="18"
                   viewBox="0 0 23 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -221,31 +222,28 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="position">
-            <p class="field-group auth-date">
-              <label class="field" for="auth-date">Дата заезда:</label>
-              <input class="auth-form-field" type="text" name="date-leaving" id="auth-date"
+            <p class="auth-date">
+              <label class="field" for="auth-date">Дата Заезда:</label>
+              <input class="auth-form-field error" type="text" name="date-leaving" id="auth-date"
                 placeholder="27 апреля 2020">
             </p>
             <span class="text-form red">Мы не можем отправить вас в прошлое.</span>
-            <p class="field-group auth-date">
-              <label class="field" for="auth-date-leaving">Дата выезда:</label>
-              <input class="auth-form-field" type="text" name="date" id="auth-date-leaving"
+            <p class="auth-date">
+              <label class="field" for="auth-date-leaving">Дата Выезда:</label>
+              <input class="auth-form-field error" type="text" name="date" id="auth-date-leaving"
                 placeholder="1 сентября 2021">
             </p>
             <span class="text-form">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="group-choice">
-            <p class="field-group">
             <div class="adults">
               <label class="field-adults" for="adults">Взрослые:</label>
               <button class="button button-minus" type="button">
               </button>
-              <input class="form-field " type="text" name="adults" id="adults" placeholder="2">
+              <input class="form-field" type="text" name="adults" id="adults" placeholder="2">
               <button class="button button-plus" type="button">
               </button>
             </div>
-            </p>
-            <p class="field-group">
             <div class="child">
               <span class="field-child">
                 <label class="field-child" for="child">
@@ -274,18 +272,14 @@
               </span>
               <button class="button button-minus" type="button">
               </button>
-              <input class="form-field " type="text" name="child" id="child" placeholder="1">
+              <input class="form-field" type="text" name="child" id="child" placeholder="1">
               <button class="button button-plus" type="button">
               </button>
             </div>
-            </p>
           </div>
           <button class="button modal-submit" type="submit">Найти</button>
-
         </form>
-
       </section>
-
 
     </div>
   </div>

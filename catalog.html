@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона. Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <div class="conteiner">
+  <div class="container">
     <!--Шапка-->
     <header class="page-header">
       <a class="header-logo" href="index.html">
@@ -57,19 +59,19 @@
         </ul>
       </nav>
     </header>
-    <main class="main-conteiner main-inner">
+    <main class="main-container main-inner">
       <!--Фильтр-->
       <section class="filter">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
+          <li>
             <a class="breadcrumbs-link" href="index.html">
               <img class="home-breadcrumbs" width="12" height="12" src="images/breadcrubs-union.svg"
                 alt="Главная страница.">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-          <li class="breadcrumbs-item">
+          <li>
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ol>
@@ -163,12 +165,12 @@
         </form>
       </section>
       <!--Гостиницы-->
-      <section class="catalog">
+      <section>
         <div class="select">
           <h2 class="catalog-title">
             Найдено гостиниц: 38
           </h2>
-          <div class="select-type sorting-type">
+          <div class="select-type">
             <select class="select-catalog" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
@@ -292,7 +294,7 @@
               <a class="pagination-link button-transform" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link button-transform">...</a>
+              <a class="pagination-link button-transform" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link button-transform" href="#">10</a>
@@ -319,12 +321,12 @@
     </main>
     <!--Футер-->
     <footer class="page-footer">
-      <section class="page-footer-conteiner">
+      <section class="page-footer-container">
         <div class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="social-link" href="https://vk.com/htmlacademy">
+              <a href="https://vk.com/htmlacademy">
                 <svg class="social-network" aria-hidden="true" focusable="false" width="25" height="14"
                   viewBox="0 0 25 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -334,7 +336,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">
+              <a href="https://t.me/htmlacademy">
                 <svg class="social-network" aria-hidden="true" focusable="false" width="18" height="16"
                   viewBox="0 0 18 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -344,7 +346,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <a href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="social-network" aria-hidden="true" focusable="false" width="23" height="18"
                   viewBox="0 0 23 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
