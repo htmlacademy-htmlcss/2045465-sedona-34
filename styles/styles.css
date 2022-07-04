@@ -107,7 +107,7 @@ body {
 }
 
 .navigation-link:focus {
-  outline: none;
+  /* outline: none; */
 }
 
 .navigation-icon {
