@@ -107,7 +107,7 @@ body {
 }
 
 .navigation-link:focus {
-  /* outline: none; */
+  outline: none;
 }
 
 .navigation-icon {
@@ -568,20 +568,17 @@ body {
   text-transform: uppercase;
 }
 
-.auth-form .field-group {
+.auth-date {
   margin: 0 0 40px;
-}
-
-.field-group {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
 }
 
 .auth-date {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .auth-form-field {
@@ -641,6 +638,9 @@ body {
 .group-choice {
   display: flex;
   margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .tooltip-toggle {
