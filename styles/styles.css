@@ -185,6 +185,7 @@ body {
   padding: 51px 371px 82px;
   background-image: url("../images/divider.svg"),
     url("../images/index-background.jpg");
+  background-color: #3F5E72;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -360,6 +361,7 @@ body {
   margin: 0;
   padding: 94px 0;
   background-image: url("../images/background-subscribe.jpg");
+  background-color: #3F5E72;
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -370,6 +372,7 @@ body {
 
 .subscribe-inner {
   background-image: none;
+  background-color: #FFFFFF;
   color: #000000;
 }
 
@@ -896,6 +899,7 @@ body {
   background-image: url("../images/catalog-backgraund.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #3F5E72;
   color: #ffffff;
   min-height: 403px;
   margin: 0;
