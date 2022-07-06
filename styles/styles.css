@@ -207,18 +207,13 @@ body {
   text-align: center;
 }
 
-.index-block {
-  min-height: 282px;
-  padding: 63px 273px 90px;
-}
-
 .index-header {
-  margin: 0 0 30px;
+  margin: 63px 0 30px;
 }
 
 .reasons {
   text-align: center;
-  margin: 0;
+  margin-bottom: 90px;
 }
 
 /* Преимущества */
@@ -318,8 +313,7 @@ body {
 .advantages-block {
   margin: 0;
   background-repeat: no-repeat;
-  background-size: 75px 72px;
-  background-position: 50% 80px;
+  background-position: 50% 81px;
 }
 
 .block-title {
@@ -397,7 +391,8 @@ body {
 }
 
 .useful {
-  margin: 29px 362px 46px;
+  text-align: center;
+  margin: 29px 0 46px;
 }
 
 .subscribe-form {
@@ -513,7 +508,7 @@ body {
 
 .footer-logo {
   width: 115px;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .logo-html {
