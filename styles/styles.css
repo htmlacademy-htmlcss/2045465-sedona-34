@@ -64,11 +64,11 @@ body {
 .page-header-logo {
   display: block;
   margin: 0 30px -5px 70px;
-  cursor: pointer;
 }
 
-.header-logo:hover {
+.header-logo[href="index.html"]:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .header-logo:focus {
@@ -128,8 +128,16 @@ body {
   padding-right: 20px;
 }
 
-.navigation-item:hover {
-  outline: 2px solid #83b3d3;
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link-current:hover {
+  color: #000000;
+}
+
+.navigation-icon:hover {
+  color: #756157;
 }
 
 .navigation-item:focus-within {
@@ -316,12 +324,19 @@ body {
 
 .block-title {
   padding: 0;
-  margin: 0;
+  margin: 183px 0 0 0;
 }
 
-.inner-block {
-  display: block;
-  margin: 80px auto 30px;
+.block-housing {
+  background-image: url("../images/housing.svg");
+}
+
+.block-food {
+  background-image: url("../images/food.svg");
+}
+
+.block-souvenirs {
+  background-image: url("../images/souvenirs.svg");
 }
 
 /* Заинтересовались */
@@ -459,8 +474,13 @@ body {
   color: #83b3d3;
 }
 
-.social-network:hover {
+.social-network:hover,
+.social-network:focus {
   color: #68a2ca;
+}
+
+.social-link:focus {
+  outline: none;
 }
 
 .social-network:active {
@@ -732,6 +752,12 @@ body {
   cursor: pointer;
 }
 
+.form-field::-webkit-outer-spin-button,
+.form-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .form-field:disabled {
   background-color: #f2f2f2;
 }
@@ -931,9 +957,11 @@ body {
   text-align: left;
   text-decoration: none;
   cursor: pointer;
+  background: url("../images/breadcrubs-union.svg") no-repeat left;
 }
 
 .breadcrumbs-link:hover {
+  /* color: rgba(255, 255, 255, 0.6); */
   opacity: 0.6;
 }
 
@@ -945,9 +973,12 @@ body {
   opacity: 0.3;
 }
 
-.home-breadcrumbs {
-  display: block;
-  margin: 5px 25px 5px 0;
+/* .breadcrumbs-hotel:hover {
+  color: #FFFFFF;
+} */
+
+.breadcrumbs-hotel {
+  padding-left: 38px;
 }
 
 .wrapper-form {
@@ -1007,7 +1038,7 @@ body {
   border-radius: 4px;
 }
 
-.option-infrastructure:hover .caption-mark {
+.option:hover .caption-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1016,7 +1047,7 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.option-infrastructure:active .caption-mark {
+.option:active .caption-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1049,6 +1080,7 @@ body {
 
 .option-input:disabled + .caption-mark {
   background-color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
 }
 
 .housing-input:focus + .caption-mark {
@@ -1333,6 +1365,7 @@ body {
   cursor: pointer;
   padding: 8px;
   border-radius: 4px;
+  border: none;
 }
 
 .button:hover {
@@ -1468,13 +1501,22 @@ body {
 .select-catalog:hover,
 .select-catalog:focus {
   border: 2px solid #68a2ca;
+  outline: none;
 }
 
-.select-catalog:active {
+.select-hotels:hover,
+.select-hotels:focus {
+  border: 2px solid #68a2ca;
+  outline: none;
+}
+
+.select-catalog:active,
+.select-hotels:active {
   border: 2px solid #3f5e72;
 }
 
-.select-catalog:disabled {
+.select-catalog:disabled,
+.select-hotels:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   opacity: 0.3;
 }
@@ -1484,6 +1526,7 @@ body {
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  border: none;
 }
 
 .toggle-list:last-child {
