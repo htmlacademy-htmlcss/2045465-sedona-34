@@ -813,7 +813,8 @@ body {
   width: 13px;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.2);
-  top: 45%;
+  z-index: 2;
+  top: 46%;
   right: 35%;
 }
 
@@ -857,9 +858,10 @@ body {
   position: absolute;
   width: 13px;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 45%;
-  right: 35%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  top: 46%;
+  right: 36%;
 }
 
 .field-child:hover::after,
@@ -870,19 +872,19 @@ body {
 .button.button-minus {
   position: absolute;
   z-index: 1;
-  transform: translate(15px, 15px);
+  transform: translate(7px, 0);
   background-color: transparent;
   border: none;
-  padding: 9px;
+  padding: 22px 16px;
 }
 
 .button.button-plus {
   position: absolute;
   z-index: 1;
-  transform: translate(-35px, 15px);
+  transform: translate(-44px, 0);
   background-color: transparent;
   border: none;
-  padding: 9px;
+  padding: 22px 16px;
 }
 
 .button.button-plus:hover,
@@ -933,7 +935,7 @@ body {
   color: #ffffff;
   min-height: 403px;
   margin: 0;
-  padding: 35px 71px 70px;
+  padding: 34px 71px 70px;
 }
 
 .inner-title {
