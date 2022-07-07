@@ -107,8 +107,8 @@ body {
   position: relative;
   min-width: 18px;
   min-height: 18px;
-  padding: 14px 20px;
-  margin: 18px 0 18px 0;
+  padding: 31px 20px;
+  margin: 0;
 }
 
 .navigation-link:focus {
@@ -140,14 +140,14 @@ body {
   color: #756157;
 }
 
-.navigation-item:focus-within {
+.navigation-link:focus {
   outline: 2px solid #83b3d3;
 }
 
 .likes {
   position: absolute;
-  top: -4px;
-  left: 24px;
+  top: 15px;
+  left: 23px;
   width: 20px;
   height: 20px;
   font-size: 10px;
@@ -156,7 +156,7 @@ body {
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 10px;
-  padding: 4px;
+  padding: 3px;
 }
 
 .navigation-link-current::before {
@@ -466,12 +466,15 @@ body {
 }
 
 .social-network {
-  color: #83b3d3;
+  fill: #83b3d3;
 }
 
-.social-network:hover,
-.social-network:focus {
-  color: #68a2ca;
+.social-network:hover{
+  fill: #68a2ca;
+}
+
+.social-link:focus .social-network {
+  fill: #68a2ca;
 }
 
 .social-link:focus {
@@ -479,7 +482,7 @@ body {
 }
 
 .social-network:active {
-  color: rgba(104, 162, 202, 0.3);
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-social-item {
@@ -518,15 +521,16 @@ body {
 
 .logo-html:hover,
 .logo-html:focus {
-  color: #756157;
+  fill: #756157;
 }
 
 .footer-logo:focus {
   outline: none;
+  fill: #756157;
 }
 
 .logo-html:active {
-  color: rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Модальное окно */
@@ -951,13 +955,11 @@ body {
 
 .breadcrumbs-link {
   display: flex;
-  /* position: relative; */
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
-  /* background: url("../images/breadcrubs-union.svg") no-repeat left; */
 }
 .breadcrumbs-link.union {
   position: relative;
@@ -1543,16 +1545,24 @@ body {
   color: #e5e5e5;
   padding: 0;
   margin: 0;
+  fill: #E5E5E5;
+}
+
+.active .toggle {
+  fill: #000000;
 }
 
 .toggle:hover,
 .toggle:active {
-  color: #000000;
+  fill: #000000;
 }
 
-.toggle-list:focus-within {
-  outline: 3px solid #68a2ca;
-  border-radius: 4px;
+.toggle-list:focus .toggle {
+  fill: #68A2CA;
+}
+
+.toggle-list:focus {
+  outline: none;
 }
 
 /* Пагинация */
