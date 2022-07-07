@@ -967,10 +967,12 @@ body {
   position: relative;
 }
 .breadcrumbs-link.union::after {
-  content: "12";
-  left: 1px;
-  color: transparent;
+  content: "";
   position: absolute;
+  top: 5px;
+  left: 1px;
+  width: 12px;
+  height: 12px;
   background: url("../images/breadcrubs-union.svg") no-repeat left;
 }
 
@@ -1062,13 +1064,12 @@ body {
 
 .option-input[type="checkbox"]:checked + .caption-mark::after {
   position: absolute;
-  content: "a";
-  color: transparent;
-  top: 5px;
-  left: 2px;
-  padding-left: 10px;
+  content: "";
+  width: 13px;
+  height: 11px;
+  top: 4px;
+  left: 4px;
   background: url("../images/check-input.svg") no-repeat;
-  background-size: 15px;
   appearance: none;
 }
 
