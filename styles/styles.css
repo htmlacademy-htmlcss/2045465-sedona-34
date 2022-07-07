@@ -500,6 +500,7 @@ body {
 .footer-contacts-phone:hover,
 .footer-contacts-phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-contacts-phone:active {
@@ -518,6 +519,10 @@ body {
 .logo-html:hover,
 .logo-html:focus {
   color: #756157;
+}
+
+.footer-logo:focus {
+  outline: none;
 }
 
 .logo-html:active {
@@ -946,17 +951,26 @@ body {
 
 .breadcrumbs-link {
   display: flex;
-  position: relative;
+  /* position: relative; */
   font-size: 16px;
   line-height: 21px;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
+  /* background: url("../images/breadcrubs-union.svg") no-repeat left; */
+}
+.breadcrumbs-link.union {
+  position: relative;
+}
+.breadcrumbs-link.union::after {
+  content: "12";
+  left: 1px;
+  color: transparent;
+  position: absolute;
   background: url("../images/breadcrubs-union.svg") no-repeat left;
 }
 
-.breadcrumbs-link:hover {
-  /* color: rgba(255, 255, 255, 0.6); */
+.breadcrumbs-link.union:hover::after {
   opacity: 0.6;
 }
 
@@ -964,13 +978,9 @@ body {
   outline: none;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link.union:active::after {
   opacity: 0.3;
 }
-
-/* .breadcrumbs-hotel:hover {
-  color: #FFFFFF;
-} */
 
 .breadcrumbs-hotel {
   padding-left: 38px;
@@ -978,7 +988,7 @@ body {
 
 .wrapper-form {
   display: flex;
-  margin-top: 38px;
+  margin-top: 39px;
 }
 
 .wrapper {
@@ -998,7 +1008,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   padding: 0;
 }
 
@@ -1313,7 +1323,7 @@ body {
 }
 
 .hotels-item {
-  padding: 20px;
+  padding: 21px;
 }
 
 .hotel-conteiner {
@@ -1433,7 +1443,7 @@ body {
 }
 
 .stars-two {
-  width: 46px;
+  width: 43px;
 }
 
 .rating {
@@ -1484,7 +1494,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   width: 100%;
-  padding: 14px 20px;
+  padding: 13px 20px;
   font: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1565,7 +1575,7 @@ body {
 
 .pagination {
   display: flex;
-  margin: 96px 71px 25px 73px;
+  margin: 94px 71px 25px 73px;
   padding: 0;
 }
 
